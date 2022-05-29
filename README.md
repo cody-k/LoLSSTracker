@@ -1,4 +1,7 @@
 # LoLSSTracker
+
+> **_NOTE:_**  There is currently a DEV OPTION for updating the API Key as I work towards obtaining a permanent API key through Riot's application process. This feature will be going away once a permanent key is obtained.
+
 This is a simple non-overlay tool built in C# designed to pull summoner spell data from the API and make it easier to track when a summoner spell was used.
 
 This program uses Riot's Spectator, and Summoner APIs along with Data Dragon to process the summoner spells that are in use on the enemy team and which champion is using them. Included is an checkbox for Ionian Boots of Lucidity in order to recalculate the cooldown changes associated with that item. As well as an option to convert the cooldown time from seconds to MIN:SEC
