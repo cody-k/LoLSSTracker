@@ -1,0 +1,16 @@
+M:\github\LoLSSTracker_Windows\LoLSSTracker\bin\Debug\LoLSSTracker.exe.config
+M:\github\LoLSSTracker_Windows\LoLSSTracker\bin\Debug\LoLSSTracker.exe
+M:\github\LoLSSTracker_Windows\LoLSSTracker\bin\Debug\LoLSSTracker.pdb
+M:\github\LoLSSTracker_Windows\LoLSSTracker\bin\Debug\Newtonsoft.Json.dll
+M:\github\LoLSSTracker_Windows\LoLSSTracker\bin\Debug\System.Net.Http.Formatting.dll
+M:\github\LoLSSTracker_Windows\LoLSSTracker\bin\Debug\Newtonsoft.Json.xml
+M:\github\LoLSSTracker_Windows\LoLSSTracker\bin\Debug\System.Net.Http.Formatting.xml
+M:\github\LoLSSTracker_Windows\LoLSSTracker\obj\Debug\LoLSSTracker.csproj.SuggestedBindingRedirects.cache
+M:\github\LoLSSTracker_Windows\LoLSSTracker\obj\Debug\LoLSSTracker.MainForm.resources
+M:\github\LoLSSTracker_Windows\LoLSSTracker\obj\Debug\LoLSSTracker.Properties.Resources.resources
+M:\github\LoLSSTracker_Windows\LoLSSTracker\obj\Debug\LoLSSTracker.csproj.GenerateResource.cache
+M:\github\LoLSSTracker_Windows\LoLSSTracker\obj\Debug\LoLSSTracker.csproj.CoreCompileInputs.cache
+M:\github\LoLSSTracker_Windows\LoLSSTracker\obj\Debug\LoLSSTracker.csproj.CopyComplete
+M:\github\LoLSSTracker_Windows\LoLSSTracker\obj\Debug\LoLSSTracker.exe
+M:\github\LoLSSTracker_Windows\LoLSSTracker\obj\Debug\LoLSSTracker.pdb
+M:\github\LoLSSTracker_Windows\LoLSSTracker\obj\Debug\LoLSSTracker.csproj.AssemblyReference.cache

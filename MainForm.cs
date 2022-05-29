@@ -256,7 +256,19 @@ namespace LoLSSTracker
                     {
                         decimal adjustedCooldown = ((decimal)ss1cd[0] - 1m) * (100m / 112m);
                         s1s1CD = (int)adjustedCooldown;
-                        summoner1spell1cooldownLabel.Text = s1s1CD.ToString();
+                        if (minSecCheckbox.Checked)
+                        {
+                            TimeSpan t = TimeSpan.FromSeconds(s1s1CD);
+                            string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                                t.Minutes,
+                                                t.Seconds);
+                            summoner1spell1cooldownLabel.Text = minSeconds;
+                        }
+                        else
+                        {
+                            summoner1spell1cooldownLabel.Text = s1s1CD.ToString();
+                        }
+                        summoner1spell1cooldownLabel.Visible = true;
                     }
                     else
                     {
@@ -265,7 +277,6 @@ namespace LoLSSTracker
                     s1s1Timer.Interval = 1000;
                     s1s1Timer.Enabled = true;
                     s1s1Timer.Start();
-                    summoner1spell1cooldownLabel.Visible = true;
                 }
             }
         }
@@ -278,13 +289,30 @@ namespace LoLSSTracker
         private void s1s1Timer_Tick(object sender, EventArgs e)
         {
             
-            if (summoner1spell1cooldownLabel.Text != "0")
+            if (s1s1CD != 0)
             {
-                summoner1spell1cooldownLabel.Text = s1s1CD--.ToString();
+                if(minSecCheckbox.Checked)
+                {
+                    TimeSpan t = TimeSpan.FromSeconds(s1s1CD);
+                    string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                        t.Minutes,
+                                        t.Seconds);
+                    summoner1spell1cooldownLabel.Text = minSeconds;
+                }
+                else
+                {
+                    summoner1spell1cooldownLabel.Text = s1s1CD.ToString();
+                }
+                summoner1spell1cooldownLabel.Visible = true;
+                s1s1CD--;
             }
             else
             {
-                summoner1spell1cooldownLabel.Text = ss1cd[0].ToString();
+                TimeSpan t = TimeSpan.FromSeconds(ss1cd[0]);
+                string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                    t.Minutes,
+                                    t.Seconds);
+                summoner1spell1cooldownLabel.Text = minSeconds;
                 s1s1Timer.Stop();
                 s1s1Timer.Enabled=false;
                 summoner1spell1cooldownLabel.Visible = false;
@@ -298,17 +326,30 @@ namespace LoLSSTracker
                 {
                     if (summoner2_cdrCheckbox.Checked)
                     {
+                        
                         decimal adjustedCooldown = ((decimal)ss1cd[1] - 1m) * (100m / 112m);
                         s2s1CD = (int)adjustedCooldown;
-                        summoner2spell1cooldownLabel.Text = s2s1CD.ToString();
-                    }else
+                        if (minSecCheckbox.Checked)
+                        {
+                            TimeSpan t = TimeSpan.FromSeconds(s2s1CD);
+                            string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                                t.Minutes,
+                                                t.Seconds);
+                            summoner2spell1cooldownLabel.Text = minSeconds;
+                        }
+                        else
+                        {
+                            summoner2spell1cooldownLabel.Text = s2s1CD.ToString();
+                        }
+                        summoner2spell1cooldownLabel.Visible = true;
+                    }
+                    else
                     {
                         s2s1CD = ss1cd[1] - 1;
                     }
                     s2s1Timer.Interval = 1000;
                     s2s1Timer.Enabled = true;
                     s2s1Timer.Start();
-                    summoner2spell1cooldownLabel.Visible = true;
                 }
             }
         }
@@ -316,9 +357,23 @@ namespace LoLSSTracker
         private void s2s1Timer_Tick(object sender, EventArgs e)
         {
 
-            if (summoner2spell1cooldownLabel.Text != "0")
+            if (s2s1CD != 0)
             {
-                summoner2spell1cooldownLabel.Text = s2s1CD--.ToString();
+                if(minSecCheckbox.Checked)
+                {
+                    TimeSpan t = TimeSpan.FromSeconds(s2s1CD);
+                    string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                        t.Minutes,
+                                        t.Seconds);
+                    summoner2spell1cooldownLabel.Text = minSeconds;
+                }
+                else
+                {
+                    summoner2spell1cooldownLabel.Text = s2s1CD.ToString();
+                }
+                summoner2spell1cooldownLabel.Visible = true;
+                s2s1CD--;
+                
             }
             else
             {
@@ -339,7 +394,19 @@ namespace LoLSSTracker
                     {
                         decimal adjustedCooldown = ((decimal)ss1cd[2] - 1m) * (100m / 112m);
                         s3s1CD = (int)adjustedCooldown;
-                        summoner3spell1cooldownLabel.Text = s3s1CD.ToString();
+                        if (minSecCheckbox.Checked)
+                        {
+                            TimeSpan t = TimeSpan.FromSeconds(s3s1CD);
+                            string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                                t.Minutes,
+                                                t.Seconds);
+                            summoner3spell1cooldownLabel.Text = minSeconds;
+                        }
+                        else
+                        {
+                            summoner3spell1cooldownLabel.Text = s3s1CD.ToString();
+                        }
+                        summoner3spell1cooldownLabel.Visible = true;
                     }
                     else
                     {
@@ -348,7 +415,7 @@ namespace LoLSSTracker
                     s3s1Timer.Interval = 1000;
                     s3s1Timer.Enabled = true;
                     s3s1Timer.Start();
-                    summoner3spell1cooldownLabel.Visible = true;
+                    
                 }
             }
         }
@@ -356,9 +423,22 @@ namespace LoLSSTracker
         private void s3s1Timer_Tick(object sender, EventArgs e)
         {
 
-            if (summoner3spell1cooldownLabel.Text != "0")
+            if (s3s1CD != 0)
             {
-                summoner3spell1cooldownLabel.Text = s3s1CD--.ToString();
+                if (minSecCheckbox.Checked)
+                {
+                    TimeSpan t = TimeSpan.FromSeconds(s3s1CD);
+                    string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                        t.Minutes,
+                                        t.Seconds);
+                    summoner3spell1cooldownLabel.Text = minSeconds;
+                }
+                else
+                {
+                    summoner3spell1cooldownLabel.Text = s3s1CD.ToString();
+                }
+                summoner3spell1cooldownLabel.Visible = true;
+                s3s1CD--;
             }
             else
             {
@@ -379,7 +459,19 @@ namespace LoLSSTracker
                     {
                         decimal adjustedCooldown = ((decimal)ss1cd[3] - 1m) * (100m / 112m);
                         s4s1CD = (int)adjustedCooldown;
-                        summoner4spell1cooldownLabel.Text = s4s1CD.ToString();
+                        if (minSecCheckbox.Checked)
+                        {
+                            TimeSpan t = TimeSpan.FromSeconds(s4s1CD);
+                            string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                                t.Minutes,
+                                                t.Seconds);
+                            summoner4spell1cooldownLabel.Text = minSeconds;
+                        }
+                        else
+                        {
+                            summoner4spell1cooldownLabel.Text = s4s1CD.ToString();
+                        }
+                        summoner4spell1cooldownLabel.Visible = true;
                     }
                     else
                     {
@@ -388,7 +480,6 @@ namespace LoLSSTracker
                     s4s1Timer.Interval = 1000;
                     s4s1Timer.Enabled = true;
                     s4s1Timer.Start();
-                    summoner4spell1cooldownLabel.Visible = true;
                 }
             }
         }
@@ -396,9 +487,22 @@ namespace LoLSSTracker
         private void s4s1Timer_Tick(object sender, EventArgs e)
         {
 
-            if (summoner4spell1cooldownLabel.Text != "0")
+            if (s4s1CD != 0)
             {
-                summoner4spell1cooldownLabel.Text = s4s1CD--.ToString();
+                if (minSecCheckbox.Checked)
+                {
+                    TimeSpan t = TimeSpan.FromSeconds(s4s1CD);
+                    string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                        t.Minutes,
+                                        t.Seconds);
+                    summoner4spell1cooldownLabel.Text = minSeconds;
+                }
+                else
+                {
+                    summoner4spell1cooldownLabel.Text = s4s1CD.ToString();
+                }
+                summoner4spell1cooldownLabel.Visible = true;
+                s4s1CD--;
             }
             else
             {
@@ -419,7 +523,19 @@ namespace LoLSSTracker
                     {
                         decimal adjustedCooldown = ((decimal)ss1cd[4] - 1m) * (100m / 112m);
                         s5s1CD = (int)adjustedCooldown;
-                        summoner5spell1cooldownLabel.Text = s5s1CD.ToString();
+                        if (minSecCheckbox.Checked)
+                        {
+                            TimeSpan t = TimeSpan.FromSeconds(s5s1CD);
+                            string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                                t.Minutes,
+                                                t.Seconds);
+                            summoner5spell1cooldownLabel.Text = minSeconds;
+                        }
+                        else
+                        {
+                            summoner5spell1cooldownLabel.Text = s5s1CD.ToString();
+                        }
+                        summoner5spell1cooldownLabel.Visible = true;
                     }
                     else
                     {
@@ -428,7 +544,7 @@ namespace LoLSSTracker
                     s5s1Timer.Interval = 1000;
                     s5s1Timer.Enabled = true;
                     s5s1Timer.Start();
-                    summoner5spell1cooldownLabel.Visible = true;
+                    
                 }
             }
         }
@@ -436,9 +552,22 @@ namespace LoLSSTracker
         private void s5s1Timer_Tick(object sender, EventArgs e)
         {
 
-            if (summoner5spell1cooldownLabel.Text != "0")
+            if (s5s1CD != 0)
             {
-                summoner5spell1cooldownLabel.Text = s5s1CD--.ToString();
+                if (minSecCheckbox.Checked)
+                {
+                    TimeSpan t = TimeSpan.FromSeconds(s5s1CD);
+                    string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                        t.Minutes,
+                                        t.Seconds);
+                    summoner5spell1cooldownLabel.Text = minSeconds;
+                }
+                else
+                {
+                    summoner5spell1cooldownLabel.Text = s5s1CD.ToString();
+                }
+                summoner5spell1cooldownLabel.Visible = true;
+                s5s1CD--;
             }
             else
             {
@@ -459,7 +588,19 @@ namespace LoLSSTracker
                     {
                         decimal adjustedCooldown = ((decimal)ss2cd[0] - 1m) * (100m / 112m);
                         s1s2CD = (int)adjustedCooldown;
-                        summoner1spell2cooldownLabel.Text = s1s2CD.ToString();
+                        if (minSecCheckbox.Checked)
+                        {
+                            TimeSpan t = TimeSpan.FromSeconds(s1s2CD);
+                            string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                                t.Minutes,
+                                                t.Seconds);
+                            summoner1spell2cooldownLabel.Text = minSeconds;
+                        }
+                        else
+                        {
+                            summoner1spell2cooldownLabel.Text = s1s2CD.ToString();
+                        }
+                        summoner1spell2cooldownLabel.Visible = true;
                     }
                     else
                     {
@@ -468,16 +609,40 @@ namespace LoLSSTracker
                     s1s2Timer.Interval = 1000;
                     s1s2Timer.Enabled = true;
                     s1s2Timer.Start();
-                    summoner1spell2cooldownLabel.Visible = true;
+                    
                 }
             }
         }
+
+        private void APIKEYToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string input = Microsoft.VisualBasic.Interaction.InputBox("Enter the updated API Key", "Update API Key", "API_KEY", 0, 0);
+            if(!string.IsNullOrEmpty(input))
+            {
+                Properties.Settings.Default.APIKey = input;
+                Properties.Settings.Default.Save();
+            }
+        }
+
         private void s1s2Timer_Tick(object sender, EventArgs e)
         {
 
-            if (summoner1spell2cooldownLabel.Text != "0")
+            if (s1s2CD != 0)
             {
-                summoner1spell2cooldownLabel.Text = s1s2CD--.ToString();
+                if (minSecCheckbox.Checked)
+                {
+                    TimeSpan t = TimeSpan.FromSeconds(s1s2CD);
+                    string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                        t.Minutes,
+                                        t.Seconds);
+                    summoner1spell2cooldownLabel.Text = minSeconds;
+                }
+                else
+                {
+                    summoner1spell2cooldownLabel.Text = s1s2CD.ToString();
+                }
+                summoner1spell2cooldownLabel.Visible = true;
+                s1s2CD--;
             }
             else
             {
@@ -498,7 +663,19 @@ namespace LoLSSTracker
                     {
                         decimal adjustedCooldown = ((decimal)ss2cd[1] - 1m) * (100m / 112m);
                         s2s2CD = (int)adjustedCooldown;
-                        summoner2spell2cooldownLabel.Text = s2s2CD.ToString();
+                        if (minSecCheckbox.Checked)
+                        {
+                            TimeSpan t = TimeSpan.FromSeconds(s2s2CD);
+                            string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                                t.Minutes,
+                                                t.Seconds);
+                            summoner2spell2cooldownLabel.Text = minSeconds;
+                        }
+                        else
+                        {
+                            summoner2spell2cooldownLabel.Text = s2s2CD.ToString();
+                        }
+                        summoner2spell2cooldownLabel.Visible = true;
                     }
                     else
                     {
@@ -515,9 +692,22 @@ namespace LoLSSTracker
         private void s2s2Timer_Tick(object sender, EventArgs e)
         {
 
-            if (summoner2spell2cooldownLabel.Text != "0")
+            if (s2s2CD != 0)
             {
-                summoner2spell2cooldownLabel.Text = s2s2CD--.ToString();
+                if (minSecCheckbox.Checked)
+                {
+                    TimeSpan t = TimeSpan.FromSeconds(s2s2CD);
+                    string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                        t.Minutes,
+                                        t.Seconds);
+                    summoner2spell2cooldownLabel.Text = minSeconds;
+                }
+                else
+                {
+                    summoner2spell2cooldownLabel.Text = s2s2CD.ToString();
+                }
+                summoner2spell2cooldownLabel.Visible = true;
+                s2s2CD--;
             }
             else
             {
@@ -538,7 +728,19 @@ namespace LoLSSTracker
                     {
                         decimal adjustedCooldown = ((decimal)ss2cd[2] - 1m) * (100m / 112m);
                         s3s2CD = (int)adjustedCooldown;
-                        summoner3spell2cooldownLabel.Text = s3s2CD.ToString();
+                        if (minSecCheckbox.Checked)
+                        {
+                            TimeSpan t = TimeSpan.FromSeconds(s3s2CD);
+                            string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                                t.Minutes,
+                                                t.Seconds);
+                            summoner3spell2cooldownLabel.Text = minSeconds;
+                        }
+                        else
+                        {
+                            summoner3spell2cooldownLabel.Text = s3s2CD.ToString();
+                        }
+                        summoner3spell2cooldownLabel.Visible = true;
                     }
                     else
                     {
@@ -554,9 +756,22 @@ namespace LoLSSTracker
         private void s3s2Timer_Tick(object sender, EventArgs e)
         {
 
-            if (summoner3spell2cooldownLabel.Text != "0")
+            if (s3s2CD != 0)
             {
-                summoner3spell2cooldownLabel.Text = s3s2CD--.ToString();
+                if (minSecCheckbox.Checked)
+                {
+                    TimeSpan t = TimeSpan.FromSeconds(s3s2CD);
+                    string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                        t.Minutes,
+                                        t.Seconds);
+                    summoner3spell2cooldownLabel.Text = minSeconds;
+                }
+                else
+                {
+                    summoner3spell2cooldownLabel.Text = s3s2CD.ToString();
+                }
+                summoner3spell2cooldownLabel.Visible = true;
+                s3s2CD--;
             }
             else
             {
@@ -577,7 +792,19 @@ namespace LoLSSTracker
                     {
                         decimal adjustedCooldown = ((decimal)ss2cd[3] - 1m) * (100m / 112m);
                         s4s2CD = (int)adjustedCooldown;
-                        summoner4spell2cooldownLabel.Text = s4s2CD.ToString();
+                        if (minSecCheckbox.Checked)
+                        {
+                            TimeSpan t = TimeSpan.FromSeconds(s4s2CD);
+                            string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                                t.Minutes,
+                                                t.Seconds);
+                            summoner4spell2cooldownLabel.Text = minSeconds;
+                        }
+                        else
+                        {
+                            summoner4spell2cooldownLabel.Text = s4s2CD.ToString();
+                        }
+                        summoner4spell2cooldownLabel.Visible = true;
                     }
                     else
                     {
@@ -594,9 +821,22 @@ namespace LoLSSTracker
         private void s4s2Timer_Tick(object sender, EventArgs e)
         {
 
-            if (summoner4spell2cooldownLabel.Text != "0")
+            if (s4s2CD != 0)
             {
-                summoner4spell2cooldownLabel.Text = s4s2CD--.ToString();
+                if (minSecCheckbox.Checked)
+                {
+                    TimeSpan t = TimeSpan.FromSeconds(s4s2CD);
+                    string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                        t.Minutes,
+                                        t.Seconds);
+                    summoner4spell2cooldownLabel.Text = minSeconds;
+                }
+                else
+                {
+                    summoner4spell2cooldownLabel.Text = s4s2CD.ToString();
+                }
+                summoner4spell2cooldownLabel.Visible = true;
+                s4s2CD--;
             }
             else
             {
@@ -617,7 +857,19 @@ namespace LoLSSTracker
                     {
                         decimal adjustedCooldown = ((decimal)ss2cd[4] - 1m) * (100m / 112m);
                         s5s2CD = (int)adjustedCooldown;
-                        summoner5spell2cooldownLabel.Text = s5s2CD.ToString();
+                        if (minSecCheckbox.Checked)
+                        {
+                            TimeSpan t = TimeSpan.FromSeconds(s5s2CD);
+                            string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                                t.Minutes,
+                                                t.Seconds);
+                            summoner5spell2cooldownLabel.Text = minSeconds;
+                        }
+                        else
+                        {
+                            summoner5spell2cooldownLabel.Text = s5s2CD.ToString();
+                        }
+                        summoner5spell2cooldownLabel.Visible = true;
                     }
                     else
                     {
@@ -634,9 +886,22 @@ namespace LoLSSTracker
         private void s5s2Timer_Tick(object sender, EventArgs e)
         {
 
-            if (summoner5spell2cooldownLabel.Text != "0")
+            if (s5s2CD != 0)
             {
-                summoner5spell2cooldownLabel.Text = s5s2CD--.ToString();
+                if (minSecCheckbox.Checked)
+                {
+                    TimeSpan t = TimeSpan.FromSeconds(s5s2CD);
+                    string minSeconds = string.Format("{0:D2}:{1:D2}",
+                                        t.Minutes,
+                                        t.Seconds);
+                    summoner5spell2cooldownLabel.Text = minSeconds;
+                }
+                else
+                {
+                    summoner5spell2cooldownLabel.Text = s5s2CD.ToString();
+                }
+                summoner5spell2cooldownLabel.Visible = true;
+                s5s2CD--;
             }
             else
             {
