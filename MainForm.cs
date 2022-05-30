@@ -619,9 +619,13 @@ namespace LoLSSTracker
             string input = Microsoft.VisualBasic.Interaction.InputBox("Enter the updated API Key", "Update API Key", "API_KEY", 0, 0);
             if(!string.IsNullOrEmpty(input))
             {
-                Properties.Settings.Default.APIKey = input;
-                Properties.Settings.Default.Save();
+                processor.APIKey = input;
             }
+        }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void s1s2Timer_Tick(object sender, EventArgs e)

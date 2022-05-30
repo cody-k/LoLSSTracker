@@ -14,3 +14,9 @@ M:\github\LoLSSTracker_Windows\LoLSSTracker\obj\Debug\LoLSSTracker.csproj.CopyCo
 M:\github\LoLSSTracker_Windows\LoLSSTracker\obj\Debug\LoLSSTracker.exe
 M:\github\LoLSSTracker_Windows\LoLSSTracker\obj\Debug\LoLSSTracker.pdb
 M:\github\LoLSSTracker_Windows\LoLSSTracker\obj\Debug\LoLSSTracker.csproj.AssemblyReference.cache
+M:\github\LoLSSTracker_Windows\LoLSSTracker\bin\Debug\AWSSDK.Core.dll
+M:\github\LoLSSTracker_Windows\LoLSSTracker\bin\Debug\AWSSDK.SecretsManager.dll
+M:\github\LoLSSTracker_Windows\LoLSSTracker\bin\Debug\AWSSDK.Core.pdb
+M:\github\LoLSSTracker_Windows\LoLSSTracker\bin\Debug\AWSSDK.Core.xml
+M:\github\LoLSSTracker_Windows\LoLSSTracker\bin\Debug\AWSSDK.SecretsManager.pdb
+M:\github\LoLSSTracker_Windows\LoLSSTracker\bin\Debug\AWSSDK.SecretsManager.xml

@@ -69,9 +69,6 @@
             this.summoner4_cdrCheckbox = new System.Windows.Forms.CheckBox();
             this.summoner5_cdrCheckbox = new System.Windows.Forms.CheckBox();
             this.minSecCheckbox = new System.Windows.Forms.CheckBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.APIKEYToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.summoner5spell2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.summoner5spell1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.summoner4spell2)).BeginInit();
@@ -92,7 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.summoner3cdrBoots)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.summoner4cdrBoots)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.summoner5cdrBoots)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // summonerNameTextbox
@@ -100,7 +96,7 @@
             this.summonerNameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.summonerNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.summonerNameTextbox.ForeColor = System.Drawing.Color.White;
-            this.summonerNameTextbox.Location = new System.Drawing.Point(42, 31);
+            this.summonerNameTextbox.Location = new System.Drawing.Point(42, 10);
             this.summonerNameTextbox.Name = "summonerNameTextbox";
             this.summonerNameTextbox.Size = new System.Drawing.Size(300, 26);
             this.summonerNameTextbox.TabIndex = 0;
@@ -113,7 +109,7 @@
             // 
             this.InGameCheckerLabel.AutoSize = true;
             this.InGameCheckerLabel.ForeColor = System.Drawing.Color.White;
-            this.InGameCheckerLabel.Location = new System.Drawing.Point(159, 60);
+            this.InGameCheckerLabel.Location = new System.Drawing.Point(159, 39);
             this.InGameCheckerLabel.Name = "InGameCheckerLabel";
             this.InGameCheckerLabel.Size = new System.Drawing.Size(67, 13);
             this.InGameCheckerLabel.TabIndex = 1;
@@ -123,7 +119,7 @@
             // summoner5spell2
             // 
             this.summoner5spell2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.summoner5spell2.Location = new System.Drawing.Point(233, 432);
+            this.summoner5spell2.Location = new System.Drawing.Point(233, 411);
             this.summoner5spell2.Name = "summoner5spell2";
             this.summoner5spell2.Size = new System.Drawing.Size(80, 80);
             this.summoner5spell2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -134,7 +130,7 @@
             // summoner5spell1
             // 
             this.summoner5spell1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.summoner5spell1.Location = new System.Drawing.Point(132, 432);
+            this.summoner5spell1.Location = new System.Drawing.Point(132, 411);
             this.summoner5spell1.Name = "summoner5spell1";
             this.summoner5spell1.Size = new System.Drawing.Size(80, 80);
             this.summoner5spell1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -145,7 +141,7 @@
             // summoner4spell2
             // 
             this.summoner4spell2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.summoner4spell2.Location = new System.Drawing.Point(233, 346);
+            this.summoner4spell2.Location = new System.Drawing.Point(233, 325);
             this.summoner4spell2.Name = "summoner4spell2";
             this.summoner4spell2.Size = new System.Drawing.Size(80, 80);
             this.summoner4spell2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -156,7 +152,7 @@
             // summoner4spell1
             // 
             this.summoner4spell1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.summoner4spell1.Location = new System.Drawing.Point(132, 346);
+            this.summoner4spell1.Location = new System.Drawing.Point(132, 325);
             this.summoner4spell1.Name = "summoner4spell1";
             this.summoner4spell1.Size = new System.Drawing.Size(80, 80);
             this.summoner4spell1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -167,7 +163,7 @@
             // summoner3spell2
             // 
             this.summoner3spell2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.summoner3spell2.Location = new System.Drawing.Point(233, 260);
+            this.summoner3spell2.Location = new System.Drawing.Point(233, 239);
             this.summoner3spell2.Name = "summoner3spell2";
             this.summoner3spell2.Size = new System.Drawing.Size(80, 80);
             this.summoner3spell2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,7 +174,7 @@
             // summoner3spell1
             // 
             this.summoner3spell1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.summoner3spell1.Location = new System.Drawing.Point(132, 260);
+            this.summoner3spell1.Location = new System.Drawing.Point(132, 239);
             this.summoner3spell1.Name = "summoner3spell1";
             this.summoner3spell1.Size = new System.Drawing.Size(80, 80);
             this.summoner3spell1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -189,7 +185,7 @@
             // summoner2spell2
             // 
             this.summoner2spell2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.summoner2spell2.Location = new System.Drawing.Point(233, 174);
+            this.summoner2spell2.Location = new System.Drawing.Point(233, 153);
             this.summoner2spell2.Name = "summoner2spell2";
             this.summoner2spell2.Size = new System.Drawing.Size(80, 80);
             this.summoner2spell2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -200,7 +196,7 @@
             // summoner2spell1
             // 
             this.summoner2spell1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.summoner2spell1.Location = new System.Drawing.Point(132, 174);
+            this.summoner2spell1.Location = new System.Drawing.Point(132, 153);
             this.summoner2spell1.Name = "summoner2spell1";
             this.summoner2spell1.Size = new System.Drawing.Size(80, 80);
             this.summoner2spell1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -211,7 +207,7 @@
             // summoner1spell2
             // 
             this.summoner1spell2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.summoner1spell2.Location = new System.Drawing.Point(233, 88);
+            this.summoner1spell2.Location = new System.Drawing.Point(233, 67);
             this.summoner1spell2.Name = "summoner1spell2";
             this.summoner1spell2.Size = new System.Drawing.Size(80, 80);
             this.summoner1spell2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -222,7 +218,7 @@
             // summoner1spell1
             // 
             this.summoner1spell1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.summoner1spell1.Location = new System.Drawing.Point(132, 88);
+            this.summoner1spell1.Location = new System.Drawing.Point(132, 67);
             this.summoner1spell1.Name = "summoner1spell1";
             this.summoner1spell1.Size = new System.Drawing.Size(80, 80);
             this.summoner1spell1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -232,7 +228,7 @@
             // 
             // summoner5
             // 
-            this.summoner5.Location = new System.Drawing.Point(12, 432);
+            this.summoner5.Location = new System.Drawing.Point(12, 411);
             this.summoner5.Name = "summoner5";
             this.summoner5.Size = new System.Drawing.Size(80, 80);
             this.summoner5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -241,7 +237,7 @@
             // 
             // summoner4
             // 
-            this.summoner4.Location = new System.Drawing.Point(12, 346);
+            this.summoner4.Location = new System.Drawing.Point(12, 325);
             this.summoner4.Name = "summoner4";
             this.summoner4.Size = new System.Drawing.Size(80, 80);
             this.summoner4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -250,7 +246,7 @@
             // 
             // summoner3
             // 
-            this.summoner3.Location = new System.Drawing.Point(12, 260);
+            this.summoner3.Location = new System.Drawing.Point(12, 239);
             this.summoner3.Name = "summoner3";
             this.summoner3.Size = new System.Drawing.Size(80, 80);
             this.summoner3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -259,7 +255,7 @@
             // 
             // summoner2
             // 
-            this.summoner2.Location = new System.Drawing.Point(12, 174);
+            this.summoner2.Location = new System.Drawing.Point(12, 153);
             this.summoner2.Name = "summoner2";
             this.summoner2.Size = new System.Drawing.Size(80, 80);
             this.summoner2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -268,7 +264,7 @@
             // 
             // summoner1
             // 
-            this.summoner1.Location = new System.Drawing.Point(12, 88);
+            this.summoner1.Location = new System.Drawing.Point(12, 67);
             this.summoner1.Name = "summoner1";
             this.summoner1.Size = new System.Drawing.Size(80, 80);
             this.summoner1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -280,7 +276,7 @@
             this.loadingLabel.AutoSize = true;
             this.loadingLabel.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loadingLabel.ForeColor = System.Drawing.Color.White;
-            this.loadingLabel.Location = new System.Drawing.Point(130, 251);
+            this.loadingLabel.Location = new System.Drawing.Point(130, 230);
             this.loadingLabel.Name = "loadingLabel";
             this.loadingLabel.Size = new System.Drawing.Size(124, 39);
             this.loadingLabel.TabIndex = 17;
@@ -291,7 +287,7 @@
             this.summoner1spell1cooldownLabel.BackColor = System.Drawing.Color.Transparent;
             this.summoner1spell1cooldownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.summoner1spell1cooldownLabel.ForeColor = System.Drawing.Color.White;
-            this.summoner1spell1cooldownLabel.Location = new System.Drawing.Point(132, 118);
+            this.summoner1spell1cooldownLabel.Location = new System.Drawing.Point(132, 97);
             this.summoner1spell1cooldownLabel.Name = "summoner1spell1cooldownLabel";
             this.summoner1spell1cooldownLabel.Size = new System.Drawing.Size(80, 20);
             this.summoner1spell1cooldownLabel.TabIndex = 18;
@@ -303,7 +299,7 @@
             this.summoner2spell1cooldownLabel.BackColor = System.Drawing.Color.Transparent;
             this.summoner2spell1cooldownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.summoner2spell1cooldownLabel.ForeColor = System.Drawing.Color.White;
-            this.summoner2spell1cooldownLabel.Location = new System.Drawing.Point(132, 204);
+            this.summoner2spell1cooldownLabel.Location = new System.Drawing.Point(132, 183);
             this.summoner2spell1cooldownLabel.Name = "summoner2spell1cooldownLabel";
             this.summoner2spell1cooldownLabel.Size = new System.Drawing.Size(80, 20);
             this.summoner2spell1cooldownLabel.TabIndex = 19;
@@ -315,7 +311,7 @@
             this.summoner3spell1cooldownLabel.BackColor = System.Drawing.Color.Transparent;
             this.summoner3spell1cooldownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.summoner3spell1cooldownLabel.ForeColor = System.Drawing.Color.White;
-            this.summoner3spell1cooldownLabel.Location = new System.Drawing.Point(132, 289);
+            this.summoner3spell1cooldownLabel.Location = new System.Drawing.Point(132, 268);
             this.summoner3spell1cooldownLabel.Name = "summoner3spell1cooldownLabel";
             this.summoner3spell1cooldownLabel.Size = new System.Drawing.Size(80, 20);
             this.summoner3spell1cooldownLabel.TabIndex = 20;
@@ -327,7 +323,7 @@
             this.summoner4spell1cooldownLabel.BackColor = System.Drawing.Color.Transparent;
             this.summoner4spell1cooldownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.summoner4spell1cooldownLabel.ForeColor = System.Drawing.Color.White;
-            this.summoner4spell1cooldownLabel.Location = new System.Drawing.Point(132, 376);
+            this.summoner4spell1cooldownLabel.Location = new System.Drawing.Point(132, 355);
             this.summoner4spell1cooldownLabel.Name = "summoner4spell1cooldownLabel";
             this.summoner4spell1cooldownLabel.Size = new System.Drawing.Size(80, 20);
             this.summoner4spell1cooldownLabel.TabIndex = 21;
@@ -339,7 +335,7 @@
             this.summoner5spell1cooldownLabel.BackColor = System.Drawing.Color.Transparent;
             this.summoner5spell1cooldownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.summoner5spell1cooldownLabel.ForeColor = System.Drawing.Color.White;
-            this.summoner5spell1cooldownLabel.Location = new System.Drawing.Point(132, 462);
+            this.summoner5spell1cooldownLabel.Location = new System.Drawing.Point(132, 441);
             this.summoner5spell1cooldownLabel.Name = "summoner5spell1cooldownLabel";
             this.summoner5spell1cooldownLabel.Size = new System.Drawing.Size(80, 20);
             this.summoner5spell1cooldownLabel.TabIndex = 22;
@@ -351,7 +347,7 @@
             this.summoner1spell2cooldownLabel.BackColor = System.Drawing.Color.Transparent;
             this.summoner1spell2cooldownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.summoner1spell2cooldownLabel.ForeColor = System.Drawing.Color.White;
-            this.summoner1spell2cooldownLabel.Location = new System.Drawing.Point(233, 116);
+            this.summoner1spell2cooldownLabel.Location = new System.Drawing.Point(233, 95);
             this.summoner1spell2cooldownLabel.Name = "summoner1spell2cooldownLabel";
             this.summoner1spell2cooldownLabel.Size = new System.Drawing.Size(80, 20);
             this.summoner1spell2cooldownLabel.TabIndex = 23;
@@ -363,7 +359,7 @@
             this.summoner2spell2cooldownLabel.BackColor = System.Drawing.Color.Transparent;
             this.summoner2spell2cooldownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.summoner2spell2cooldownLabel.ForeColor = System.Drawing.Color.White;
-            this.summoner2spell2cooldownLabel.Location = new System.Drawing.Point(233, 204);
+            this.summoner2spell2cooldownLabel.Location = new System.Drawing.Point(233, 183);
             this.summoner2spell2cooldownLabel.Name = "summoner2spell2cooldownLabel";
             this.summoner2spell2cooldownLabel.Size = new System.Drawing.Size(80, 20);
             this.summoner2spell2cooldownLabel.TabIndex = 24;
@@ -375,7 +371,7 @@
             this.summoner3spell2cooldownLabel.BackColor = System.Drawing.Color.Transparent;
             this.summoner3spell2cooldownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.summoner3spell2cooldownLabel.ForeColor = System.Drawing.Color.White;
-            this.summoner3spell2cooldownLabel.Location = new System.Drawing.Point(233, 290);
+            this.summoner3spell2cooldownLabel.Location = new System.Drawing.Point(233, 269);
             this.summoner3spell2cooldownLabel.Name = "summoner3spell2cooldownLabel";
             this.summoner3spell2cooldownLabel.Size = new System.Drawing.Size(80, 20);
             this.summoner3spell2cooldownLabel.TabIndex = 25;
@@ -387,7 +383,7 @@
             this.summoner4spell2cooldownLabel.BackColor = System.Drawing.Color.Transparent;
             this.summoner4spell2cooldownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.summoner4spell2cooldownLabel.ForeColor = System.Drawing.Color.White;
-            this.summoner4spell2cooldownLabel.Location = new System.Drawing.Point(233, 376);
+            this.summoner4spell2cooldownLabel.Location = new System.Drawing.Point(233, 355);
             this.summoner4spell2cooldownLabel.Name = "summoner4spell2cooldownLabel";
             this.summoner4spell2cooldownLabel.Size = new System.Drawing.Size(80, 20);
             this.summoner4spell2cooldownLabel.TabIndex = 26;
@@ -399,7 +395,7 @@
             this.summoner5spell2cooldownLabel.BackColor = System.Drawing.Color.Transparent;
             this.summoner5spell2cooldownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.summoner5spell2cooldownLabel.ForeColor = System.Drawing.Color.White;
-            this.summoner5spell2cooldownLabel.Location = new System.Drawing.Point(233, 462);
+            this.summoner5spell2cooldownLabel.Location = new System.Drawing.Point(233, 441);
             this.summoner5spell2cooldownLabel.Name = "summoner5spell2cooldownLabel";
             this.summoner5spell2cooldownLabel.Size = new System.Drawing.Size(80, 20);
             this.summoner5spell2cooldownLabel.TabIndex = 27;
@@ -408,7 +404,7 @@
             // 
             // refreshButton
             // 
-            this.refreshButton.Location = new System.Drawing.Point(15, 61);
+            this.refreshButton.Location = new System.Drawing.Point(15, 40);
             this.refreshButton.Name = "refreshButton";
             this.refreshButton.Size = new System.Drawing.Size(75, 23);
             this.refreshButton.TabIndex = 28;
@@ -419,7 +415,7 @@
             // summoner1cdrBoots
             // 
             this.summoner1cdrBoots.Image = global::LoLSSTracker.Properties.Resources.cdrBoots;
-            this.summoner1cdrBoots.Location = new System.Drawing.Point(349, 118);
+            this.summoner1cdrBoots.Location = new System.Drawing.Point(349, 97);
             this.summoner1cdrBoots.Name = "summoner1cdrBoots";
             this.summoner1cdrBoots.Size = new System.Drawing.Size(20, 20);
             this.summoner1cdrBoots.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -430,7 +426,7 @@
             // summoner2cdrBoots
             // 
             this.summoner2cdrBoots.Image = global::LoLSSTracker.Properties.Resources.cdrBoots;
-            this.summoner2cdrBoots.Location = new System.Drawing.Point(349, 204);
+            this.summoner2cdrBoots.Location = new System.Drawing.Point(349, 183);
             this.summoner2cdrBoots.Name = "summoner2cdrBoots";
             this.summoner2cdrBoots.Size = new System.Drawing.Size(20, 20);
             this.summoner2cdrBoots.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -441,7 +437,7 @@
             // summoner3cdrBoots
             // 
             this.summoner3cdrBoots.Image = global::LoLSSTracker.Properties.Resources.cdrBoots;
-            this.summoner3cdrBoots.Location = new System.Drawing.Point(349, 290);
+            this.summoner3cdrBoots.Location = new System.Drawing.Point(349, 269);
             this.summoner3cdrBoots.Name = "summoner3cdrBoots";
             this.summoner3cdrBoots.Size = new System.Drawing.Size(20, 20);
             this.summoner3cdrBoots.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -452,7 +448,7 @@
             // summoner4cdrBoots
             // 
             this.summoner4cdrBoots.Image = global::LoLSSTracker.Properties.Resources.cdrBoots;
-            this.summoner4cdrBoots.Location = new System.Drawing.Point(349, 376);
+            this.summoner4cdrBoots.Location = new System.Drawing.Point(349, 355);
             this.summoner4cdrBoots.Name = "summoner4cdrBoots";
             this.summoner4cdrBoots.Size = new System.Drawing.Size(20, 20);
             this.summoner4cdrBoots.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -463,7 +459,7 @@
             // summoner5cdrBoots
             // 
             this.summoner5cdrBoots.Image = global::LoLSSTracker.Properties.Resources.cdrBoots;
-            this.summoner5cdrBoots.Location = new System.Drawing.Point(349, 462);
+            this.summoner5cdrBoots.Location = new System.Drawing.Point(349, 441);
             this.summoner5cdrBoots.Name = "summoner5cdrBoots";
             this.summoner5cdrBoots.Size = new System.Drawing.Size(20, 20);
             this.summoner5cdrBoots.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -474,7 +470,7 @@
             // summoner1_cdrCheckbox
             // 
             this.summoner1_cdrCheckbox.AutoSize = true;
-            this.summoner1_cdrCheckbox.Location = new System.Drawing.Point(327, 121);
+            this.summoner1_cdrCheckbox.Location = new System.Drawing.Point(327, 100);
             this.summoner1_cdrCheckbox.Name = "summoner1_cdrCheckbox";
             this.summoner1_cdrCheckbox.Size = new System.Drawing.Size(15, 14);
             this.summoner1_cdrCheckbox.TabIndex = 34;
@@ -484,7 +480,7 @@
             // summoner2_cdrCheckbox
             // 
             this.summoner2_cdrCheckbox.AutoSize = true;
-            this.summoner2_cdrCheckbox.Location = new System.Drawing.Point(327, 207);
+            this.summoner2_cdrCheckbox.Location = new System.Drawing.Point(327, 186);
             this.summoner2_cdrCheckbox.Name = "summoner2_cdrCheckbox";
             this.summoner2_cdrCheckbox.Size = new System.Drawing.Size(15, 14);
             this.summoner2_cdrCheckbox.TabIndex = 35;
@@ -494,7 +490,7 @@
             // summoner3_cdrCheckbox
             // 
             this.summoner3_cdrCheckbox.AutoSize = true;
-            this.summoner3_cdrCheckbox.Location = new System.Drawing.Point(327, 293);
+            this.summoner3_cdrCheckbox.Location = new System.Drawing.Point(327, 272);
             this.summoner3_cdrCheckbox.Name = "summoner3_cdrCheckbox";
             this.summoner3_cdrCheckbox.Size = new System.Drawing.Size(15, 14);
             this.summoner3_cdrCheckbox.TabIndex = 36;
@@ -504,7 +500,7 @@
             // summoner4_cdrCheckbox
             // 
             this.summoner4_cdrCheckbox.AutoSize = true;
-            this.summoner4_cdrCheckbox.Location = new System.Drawing.Point(327, 379);
+            this.summoner4_cdrCheckbox.Location = new System.Drawing.Point(327, 358);
             this.summoner4_cdrCheckbox.Name = "summoner4_cdrCheckbox";
             this.summoner4_cdrCheckbox.Size = new System.Drawing.Size(15, 14);
             this.summoner4_cdrCheckbox.TabIndex = 37;
@@ -514,7 +510,7 @@
             // summoner5_cdrCheckbox
             // 
             this.summoner5_cdrCheckbox.AutoSize = true;
-            this.summoner5_cdrCheckbox.Location = new System.Drawing.Point(327, 465);
+            this.summoner5_cdrCheckbox.Location = new System.Drawing.Point(327, 444);
             this.summoner5_cdrCheckbox.Name = "summoner5_cdrCheckbox";
             this.summoner5_cdrCheckbox.Size = new System.Drawing.Size(15, 14);
             this.summoner5_cdrCheckbox.TabIndex = 38;
@@ -525,44 +521,19 @@
             // 
             this.minSecCheckbox.AutoSize = true;
             this.minSecCheckbox.ForeColor = System.Drawing.Color.White;
-            this.minSecCheckbox.Location = new System.Drawing.Point(303, 65);
+            this.minSecCheckbox.Location = new System.Drawing.Point(303, 44);
             this.minSecCheckbox.Name = "minSecCheckbox";
             this.minSecCheckbox.Size = new System.Drawing.Size(70, 17);
             this.minSecCheckbox.TabIndex = 39;
             this.minSecCheckbox.Text = "MIN:SEC";
             this.minSecCheckbox.UseVisualStyleBackColor = true;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.optionsToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(385, 24);
-            this.menuStrip1.TabIndex = 40;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.APIKEYToolStripMenuItem});
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
-            this.optionsToolStripMenuItem.Text = "DEV OPTIONS";
-            // 
-            // APIKEYToolStripMenuItem
-            // 
-            this.APIKEYToolStripMenuItem.Name = "APIKEYToolStripMenuItem";
-            this.APIKEYToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.APIKEYToolStripMenuItem.Text = "UPDATE API KEY";
-            this.APIKEYToolStripMenuItem.Click += new System.EventHandler(this.APIKEYToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(385, 523);
+            this.ClientSize = new System.Drawing.Size(385, 504);
             this.Controls.Add(this.minSecCheckbox);
             this.Controls.Add(this.summoner5_cdrCheckbox);
             this.Controls.Add(this.summoner4_cdrCheckbox);
@@ -603,10 +574,8 @@
             this.Controls.Add(this.summoner1);
             this.Controls.Add(this.InGameCheckerLabel);
             this.Controls.Add(this.summonerNameTextbox);
-            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "League Summoner Spell Tracker";
@@ -632,8 +601,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.summoner3cdrBoots)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.summoner4cdrBoots)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.summoner5cdrBoots)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -681,9 +648,6 @@
         private System.Windows.Forms.CheckBox summoner4_cdrCheckbox;
         private System.Windows.Forms.CheckBox summoner5_cdrCheckbox;
         private System.Windows.Forms.CheckBox minSecCheckbox;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem APIKEYToolStripMenuItem;
     }
 }
 

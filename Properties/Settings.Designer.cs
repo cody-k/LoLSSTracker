@@ -22,17 +22,5 @@ namespace LoLSSTracker.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("RGAPI-838cf5e2-1992-4d24-9402-12b30f4414d0")]
-        public string APIKey {
-            get {
-                return ((string)(this["APIKey"]));
-            }
-            set {
-                this["APIKey"] = value;
-            }
-        }
     }
 }
