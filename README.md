@@ -1,5 +1,5 @@
 # LoLSSTracker
-
+## Currently working on properly securing API Key.
 > **_NOTE:_**  There is currently a DEV OPTION for updating the API Key as I work towards obtaining a permanent API key through Riot's application process. This feature will be going away once a permanent key is obtained. If you do not have a development API Key to insert this program will not currently work.
 
 This is a simple non-overlay tool built in C# designed to pull summoner spell data from the API and make it easier to track when a summoner spell was used.
